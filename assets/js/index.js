@@ -1,44 +1,77 @@
 /*=============== SERVICES MODAL ===============*/
-const modal = document.querySelectorAll('.services__modal'),
-      modalButton = document.querySelectorAll('.services__button'),
-      modalClose = document.querySelectorAll('.services__modal-close')
+const modals = document.querySelectorAll('.services__modal')
+const modalButtons = document.querySelectorAll('.services__button')
+const modalCloses = document.querySelectorAll('.services__modal-close')
 
-let activeModal = (modalClick) => {
-    modal[modalClick].classList.add('active-modal')
+// Show modal
+const showModal = (index) => {
+    modals[index].classList.add('active-modal')
 }
 
-modalButton.forEach((modalButton, i) => {
-    modalButton.addEventListener('click', () => {
-        activeModal(i)
+// Open modal
+modalButtons.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+        showModal(i)
     })
 })
 
-modalClose.forEach((modalClose) => {
-    modalClose.addEventListener('click', () => {
-        modal.forEach((modalRemove) => {
-            modalRemove.classList.remove('active-modal')
+// Close modal (button)
+modalCloses.forEach((closeBtn) => {
+    closeBtn.addEventListener('click', () => {
+        modals.forEach((modal) => {
+            modal.classList.remove('active-modal')
         })
     })
 })
 
-/*=============== SWIPER TESTIMONIAL ===============*/
-const swiperTestimonial = new Swiper('.testimonial__swiper', {
-    loop: true,
-    spaceBetween: 32,
-    grabCursor: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
-      dynamicBullets: true,
-      clickable: true,
-    },
-  });
+// Close modal (click outside)
+modals.forEach((modal) => {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active-modal')
+        }
+    })
+})
 
-/*=============== SHOW SCROLL UP ===============*/ 
-const scrollUp = () =>{
-	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-						: scrollUp.classList.remove('show-scroll')
+
+/*=============== SWIPER TESTIMONIAL ===============*/
+const swiperContainer = document.querySelector('.testimonial__swiper')
+
+if (swiperContainer) {
+    new Swiper('.testimonial__swiper', {
+        loop: true,
+        spaceBetween: 32,
+        grabCursor: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true,
+        },
+
+        breakpoints: {
+            768: {
+                spaceBetween: 40
+            },
+            1024: {
+                spaceBetween: 50
+            }
+        }
+    })
 }
+
+
+/*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+    const scrollUpBtn = document.getElementById('scroll-up')
+
+    if (!scrollUpBtn) return // ✅ safety check
+
+    if (window.scrollY >= 350) {
+        scrollUpBtn.classList.add('show-scroll')
+    } else {
+        scrollUpBtn.classList.remove('show-scroll')
+    }
+}
+
 window.addEventListener('scroll', scrollUp)
