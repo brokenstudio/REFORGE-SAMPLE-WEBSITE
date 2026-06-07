@@ -1,450 +1,175 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Responsive portfolio website</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="index.html" class="nav__logo">ReForged</a>
-
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="index.html" class="nav__link">Home</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="about.html" class="nav__link">About Us</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="work.html" class="nav__link">Portfolio</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="contact.html" class="button">Contact Us</a>
-                  </li>
-               </ul>
-
-               <!-- Close Button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-
-            <div class="nav__actions">
-               <!-- Theme Button -->
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
-              
-               <!-- Toggle Button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-apps-2-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section">
-            <div class="home__rectangle"></div>
-
-            <div class="home__container container grid">
-               <div class="home__perfil perfil">
-                  <div class="perfil__content">
-                     <img src="assets/img/new_icon_transparent.png" alt="image" class="perfil__img">
-                  </div>
-               </div>
-
-               <div class="home__content grid">
-                  <div class="home__data grid">
-                     <h1 class="home__name">ReForged</h1>
-                     
-                     <h2 class="home__profession">Construction Company</h2>
-
-                     <div class="home__social">
-                        <a href="https://github.com/" target="_blank" rel="noopener" class="home__social-link" title="GitHub">
-                           <i class="ri-github-fill"></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="home__social-link" title="LinkedIn">
-                           <i class="ri-linkedin-box-fill"></i>
-                        </a>
-
-                        <a href="https://dribbble.com/" target="_blank" rel="noopener" class="home__social-link" title="Dribbble">
-                           <i class="ri-dribbble-line"></i>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- <a href="assets/pdf/Liz-Cv.pdf" download="" class="home__button button">Download CV</a> -->
-               </div>
-            </div>
-            
-         </section>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            <h2 class="section__title">
-               Services <br>
-               We Offer
-            </h2>
-
-            <div class="services__container container grid">
-               <article class="services__card">
-                  <i class="ri-pencil-ruler-2-line services__icon"></i>
-                  <h2 class="services__title">Architectural Designs</h2>
-                  <p class="services__description">
-                     Transform your vision into reality with our expert architectural design services. 
-                     Our talented team of architects combines creativity, functionality, and sustainability to deliver innovative designs tailored to your unique needs. 
-                     From concept to detailed plans, we bring your dream project to life.
-                  </p>
-
-                  <button class="services__button button">Know More</button>
-
-                  <div class="services__modal">
-                     <div class="services__modal-content">
-                        <i class="ri-close-line services__modal-close"></i>
-
-                        <h2 class="services__modal-title">Architural Design</h2>
-
-                        <ul class="services__modal-list grid">
-                           <li class="services__modal-item">
-                              Our architectural design process commences with an in-depth collaboration, ensuring that we grasp every nuance of your vision. By prioritizing your preferences and goals, we create designs that truly reflect your unique style and aspirations.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              We don't just design structures; we conceive experiences. Our team brings innovation to the table, exploring cutting-edge concepts and architectural trends to infuse creativity and uniqueness into every project.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              Understanding the end-users is at the core of our design philosophy. We focus on creating spaces that not only look impressive but also enhance the daily lives and experiences of those who inhabit them.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              Striving for a greener future, our designs incorporate sustainable practices and eco-friendly materials. From energy-efficient layouts to environmentally conscious material choices, we contribute to a more sustainable built environment.
-
-                           <li class="services__modal-item">
-                              From the initial sketches to the final blueprints, our holistic approach considers every detail. We factor in functionality, aesthetics, and practicality to ensure that your architectural design is not just visually stunning but also functional and enduring.
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </article>
-
-               <article class="services__card">
-                  <i class="ri-file-list-2-line services__icon"></i>
-                  <h2 class="services__title">Quantity Estimate</h2>
-                  <p class="services__description">
-                     Accurate project planning begins with precise quantity estimation. 
-                     At ReForged, we leverage advanced techniques and industry expertise to provide detailed and reliable quantity estimates. 
-                     Our meticulous approach ensures cost-effectiveness and efficient resource allocation for your construction projects.
-                  </p>
-
-                  <button class="services__button button">Know More</button>
-
-                  <div class="services__modal">
-                     <div class="services__modal-content">
-                        <i class="ri-close-line services__modal-close"></i>
-
-                        <h2 class="services__modal-title">Quantity Estimate</h2>
-
-                        <ul class="services__modal-list grid">
-                           <li class="services__modal-item">
-                              Our quantity estimation process involves a meticulous analysis of the materials required for your project. This comprehensive approach ensures that no detail is overlooked, preventing material shortages and unnecessary project delays.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              Leveraging state-of-the-art estimation software, we provide precise and reliable quantity assessments. This advanced technology allows for quick adjustments in response to design changes, ensuring accuracy throughout the project lifecycle.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              We believe in transparency when it comes to project costs. Our quantity estimation services provide clear insights into material expenses, helping you make informed decisions and manage your budget effectively.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              Anticipating potential challenges, our quantity estimation team develops proactive strategies to mitigate risks associated with material procurement, helping you avoid cost overruns and maintain project timelines.
-                           </li>
-
-                           <li class="services__modal-item">
-                              Quantity estimation is not a one-time activity; it's an ongoing collaboration. We stay engaged throughout the project, adapting our estimates to evolving requirements and providing consistent support to keep your project on track.
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </article>
-               
-               <article class="services__card">
-                  <i class="ri-shopping-bag-3-line services__icon"></i>
-                  <h2 class="services__title">Contruction Supply</h2>
-                  <p class="services__description">
-                     Elevate the quality of your construction projects with our premium construction materials. 
-                     ReForged is your trusted partner in sourcing and supplying top-notch materials, from structural components to finishing touches. 
-                     We prioritize quality and reliability to ensure the success and durability of your builds.
-                  </p>
-
-                  <button class="services__button button">Know More</button>
-
-                  <div class="services__modal">
-                     <div class="services__modal-content">
-                        <i class="ri-close-line services__modal-close"></i>
-
-                        <h2 class="services__modal-title">Construction Supply</h2>
-
-                        <ul class="services__modal-list grid">
-                           <li class="services__modal-item">
-                              At ReForged Construction, quality is non-negotiable. We source construction materials only from trusted suppliers, ensuring that every component meets stringent quality standards and contributes to the overall durability of your project.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              Recognizing the importance of timely construction, our materials supply services are designed for punctuality. We commit to delivering materials when you need them, reducing downtime and keeping your project on schedule.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              Every project is unique, and so are its material requirements. Our supply services offer a range of customizable solutions, allowing you to choose materials that align with your project specifications, design preferences, and budget constraints.
-                           </li>
-                           
-                           <li class="services__modal-item">
-                              With an efficient inventory management system in place, we ensure that construction materials are available when and where you need them. This streamlines the construction process and minimizes disruptions.
-                           </li>
-
-                           <li class="services__modal-item">
-                              Should any issues arise during the supply process, our team is proactive in addressing them. Whether it's sourcing alternatives or resolving logistics challenges, we ensure that potential problems are swiftly and effectively resolved.
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== WORK ====================-->
-         <section class="work section">
-            <h2 class="section__title">
-               Our <br>
-               Recent Projects
-            </h2>
-
-            <div class="work__container container grid">
-               <article class="work__card">
-                  <a href="https://en.wikipedia.org/wiki/Tao_Zhu_Yin_Yuan" target="_blank" rel="noopener" class="work__link">
-                     <img src="assets/img/newimg/resized/agora_garden_tower.png" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">Agora Garden Tower</h2>
-                  <span class="work__subtitle">Taiwan</span>
-               </article>
-
-               <article class="work__card">
-                  <a href="https://en.wikipedia.org/wiki/Dubai_One_Tower" target="_blank" rel="noopener" class="work__link">
-                     <img src="assets/img/newimg/resized/dubai_one_tower.png" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">Dubai One Tower</h2>
-                  <span class="work__subtitle">Dubai, United Arab Emirates</span>
-               </article>
-
-               <article class="work__card">
-                  <a href="https://en.wikipedia.org/wiki/Dubai_Pearl" target="_blank" rel="noopener" class="work__link">
-                     <img src="assets/img/newimg/resized/dubai_pearl.png" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">Dubai Pearl</h2>
-                  <span class="work__subtitle">Dubai, United Arab Emirates</span>
-               </article>
-
-               <article class="work__card">
-                  <a href="https://en.wikipedia.org/wiki/Fagus_Factory" target="_blank" rel="noopener" class="work__link">
-                     <img src="assets/img/newimg/fuguswerk_factory.jpg" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">Fagus Factory</h2>
-                  <span class="work__subtitle">Lower Saxony, Germany</span>
-               </article>
-
-               <article class="work__card">
-                  <a href="https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations" target="_blank" rel="noopener" class="work__link">
-                     <img src="assets/img/newimg/resized/un_hq_tower.png" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">United Nation Headquarter</h2>
-                  <span class="work__subtitle">New York City</span>
-               </article>
-
-               <article class="work__card">
-                  <a href="https://en.wikipedia.org/wiki/Seagram_Building" target="_blank" rel="noopener" class="work__link">
-                     <img src="assets/img/newimg/seagram_building.jpg" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">Seagram Building</h2>
-                  <span class="work__subtitle">Manhattan, New York</span>
-               </article>
-            </div>
-         </section>
-
-         <!-- ==================== TESTIMONIAL ==================== -->
-         <!-- <section class="testimonial section">
-            <h2 class="section__title">
-               What they Say <br>
-               About Me?
-            </h2>
-
-            <div class="testimonial__container container">
-               <div class="testimonial__swiper swiper">
-                  <div class="swiper-wrapper">
-                  <article class="testimonial__card swiper-slide">
-                     <div class="testimonial__border">
-                        <img src="assets/img/testimonial-1.png" alt="image" class="testimonial__img">
-                     </div>
-
-                     <h2 class="testimonial__name">Jen Will</h2>
-                     <p class="testimonial__description">
-                        I hired a project and the services were of 
-                        quality, the work delivered is of good 
-                        content, excellent work.
-                     </p>
-                  </article>
-
-                  <article class="testimonial__card swiper-slide">
-                     <div class="testimonial__border">
-                        <img src="assets/img/testimonial-2.png" alt="image" class="testimonial__img">
-                     </div>
-
-                     <h2 class="testimonial__name">Rial Loz</h2>
-                     <p class="testiminial__description">
-                        I hired a project and the services were of 
-                        quality, the work delivered is of good 
-                        content, excellent work.
-                     </p>
-                  </article>
-
-                  <article class="testimonial__card swiper-slide">
-                     <div class="testimonial__border">
-                        <img src="assets/img/testimonial-3.png" alt="image" class="testimonial__img">
-                     </div>
-
-                     <h2 class="testimonial__name">May Doth</h2>
-                     <p class="testiminial__description">
-                        I hired a project and the services were of 
-                        quality, the work delivered is of good 
-                        content, excellent work.
-                     </p>
-                  </article>
-
-                  <article class="testimonial__card swiper-slide">
-                     <div class="testimonial__border">
-                        <img src="assets/img/testimonial-4.png" alt="image" class="testimonial__img">
-                     </div>
-
-                     <h2 class="testimonial__name">Celi Phet</h2>
-                     <p class="testiminial__description">
-                        I hired a project and the services were of 
-                        quality, the work delivered is of good 
-                        content, excellent work.
-                     </p>
-                  </article>
-                  </div> 
-               </div> -->
-
-               <!-- Pagination -->
-               <!-- <div class="swiper-pagination"></div>
-            </div>
-         </section> -->
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section">
-            <div class="contact__container container grid">
-               <h2 class="section__title">
-                  Let's Talk <br>
-                  About Your Project
-               </h2>
-
-               <a href="contact.html" class="contact__button button">Contact Us</a>
-            </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <div class="footer__content grid">
-               <a href="index.html" class="footer__logo">ReForged</a>
-
-               <ul class="footer__links">
-                  <li>
-                     <a href="about.html" class="footer__link">About Us</a>
-                  </li>
-
-                  <li>
-                     <a href="work.html" class="footer__link">Portfolio</a>
-                  </li>
-
-                  <li>
-                     <a href="contact.html" class="footer__link">Contact Us</a>
-                  </li>
-               </ul>
-
-               <div class="footer__social">
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__social-link" title="Facebook">
-                     <i class="ri-facebook-circle-fill"></i>
-                  </a>
-                     
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer__social-link" title="Instagram">
-                     <i class="ri-instagram-fill"></i>
-                  </a>
-
-                  <a href="https://twitter.com/" target="_blank" rel="noopener" class="footer__social-link" title="X">
-                     <i class="ri-twitter-x-line"></i>
-                  </a>
-
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer__social-link" title="Linkedin">
-                     <i class="ri-linkedin-box-fill"></i>
-                  </a>
-               </div>
-            </div>
-
-            <span class="footer__copy">
-               &#169; All Rights Reserved | ReForgedSite
-            </span>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- FAVICON -->
+   <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+
+   <!-- REMIXICONS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!-- SWIPER CSS -->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+   <!-- MAIN CSS -->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>ReForged Portfolio</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+   <nav class="nav container">
+      <a href="index.html" class="nav__logo">ReForged</a>
+
+      <div class="nav__menu" id="nav-menu">
+         <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About Us</a></li>
+            <li><a href="work.html" class="nav__link">Portfolio</a></li>
+            <li><a href="contact.html" class="button">Contact Us</a></li>
+         </ul>
+
+         <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
          </div>
-      </footer>
+      </div>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
-      </a>
+      <div class="nav__actions">
+         <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </div>
+   </nav>
+</header>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
+<!-- MAIN -->
+<main>
 
-      <!--=============== INDEX JS ===============-->
-      <script src="assets/js/index.js"></script>
-   </body>
+<!-- HOME -->
+<section class="home section">
+   <div class="home__container container grid">
+      <img src="assets/img/new_icon_transparent.png" alt="ReForged Logo" class="perfil__img">
+
+      <div>
+         <h1 class="home__name">ReForged</h1>
+         <h2 class="home__profession">Construction Company</h2>
+      </div>
+   </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services section">
+   <h2 class="section__title">Services We Offer</h2>
+
+   <div class="services__container container grid">
+
+      <!-- CARD -->
+      <article class="services__card">
+         <h2>Architectural Designs</h2>
+         <button class="services__button button">Know More</button>
+
+         <div class="services__modal">
+            <div class="services__modal-content">
+               <i class="ri-close-line services__modal-close"></i>
+
+               <h2>Architectural Design</h2>
+
+               <ul class="services__modal-list">
+                  <li>We collaborate deeply with your vision.</li>
+                  <li>We create innovative architectural concepts.</li>
+                  <li>We design user-centered spaces.</li>
+                  <li>We apply sustainable solutions.</li>
+                  <li>We ensure functionality + aesthetics.</li>
+               </ul>
+            </div>
+         </div>
+      </article>
+
+      <!-- You can duplicate cards as needed -->
+
+   </div>
+</section>
+
+<!-- SCROLL UP -->
+<a href="#" class="scrollup" id="scroll-up">
+   <i class="ri-arrow-up-line"></i>
+</a>
+
+<!-- SWIPER -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!-- MAIN JS -->
+<script>
+/*=============== SERVICES MODAL ===============*/
+const modals = document.querySelectorAll('.services__modal')
+const modalButtons = document.querySelectorAll('.services__button')
+const modalCloses = document.querySelectorAll('.services__modal-close')
+
+// Show modal
+const showModal = (index) => {
+   modals[index].classList.add('active-modal')
+}
+
+// Open modal
+modalButtons.forEach((btn, i) => {
+   btn.addEventListener('click', () => showModal(i))
+})
+
+// Close modal button
+modalCloses.forEach((btn) => {
+   btn.addEventListener('click', () => {
+      modals.forEach(m => m.classList.remove('active-modal'))
+   })
+})
+
+// Close when clicking outside
+modals.forEach((modal) => {
+   modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+         modal.classList.remove('active-modal')
+      }
+   })
+})
+
+/*=============== SWIPER (SAFE) ===============*/
+const swiperContainer = document.querySelector('.testimonial__swiper')
+
+if (swiperContainer) {
+   new Swiper('.testimonial__swiper', {
+      loop: true,
+      spaceBetween: 32,
+      grabCursor: true,
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+      },
+      breakpoints: {
+         768: { spaceBetween: 40 },
+         1024: { spaceBetween: 50 },
+      },
+   })
+}
+
+/*=============== SCROLL UP ===============*/
+const scrollUp = () => {
+   const scrollUpBtn = document.getElementById('scroll-up')
+
+   if (window.scrollY >= 350) {
+      scrollUpBtn.classList.add('show-scroll')
+   } else {
+      scrollUpBtn.classList.remove('show-scroll')
+   }
+}
+
+window.addEventListener('scroll', scrollUp)
+</script>
+
+</body>
 </html>
